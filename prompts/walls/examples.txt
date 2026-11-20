@@ -1,0 +1,22 @@
+# walls: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py walls prompts/walls/examples.txt <prompts_out.txt>
+wall | iron riveted wall with copper pipes
+wall | dead wood wall dripping green slime
+wall | tan sandstone block wall with carved bands
+wall | dark elven stone wall with silver trim
+wall | living wall of woven silver tree branches
+stairs | steep pyramid steps of large stone blocks
+stairs | grassy earth steps edged with flat stones
+stairs | stone shrine stairs with red railings
+stairs | wooden pier stairs with rope railings
+stairs | tiled stairs with a blue patterned edge
+opening | grey stone frame: empty, stairs below, trapdoor, ladder below
+opening | hidden tomb shafts in a sandstone floor
+opening | round rabbit burrow holes in grassy ground
+opening | iron grated trapdoors over deep pits
+opening | steaming vent holes in black volcanic rock
+ladder | iron rung ladder bolted to a shaft wall
+ladder | wooden harbor ladder covered with barnacles
+ladder | notched wooden log ladder with a forked top
+ladder | rickety ladder of sticks and rope
+ladder | spiral vine ladder with pale wooden rungs

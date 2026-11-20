@@ -1,0 +1,22 @@
+# pairs: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py pairs prompts/pairs/examples.txt <prompts_out.txt>
+decoration | upright loom with checkered cloth
+decoration | red wooden shrine gate with two pillars
+decoration | fountain spraying beams of light
+decoration | wooden water wheel in a small stream
+container | open barrel full of slimy green toads
+container | golden urn decorated with clouds
+container | burlap sack full of potatoes
+container | sandy limestone sarcophagus with painted blue hieroglyphs
+furniture | low camp table made from a stump and planks
+furniture | bed made of a giant leaf
+furniture | tall carved wooden throne with antlers
+furniture | wide ale table carved from rock
+light | stone fire pit with glowing coals
+light | iron cauldron hanging over a fire
+light | iron fire basket on a tall dock pole
+light | small cooking fire in a ring of stones
+statue | jackal headed guardian holding a staff
+statue | carved wooden harvest goddess holding a basket
+statue | carved wooden bear standing on its hind legs
+statue | dwarf statue, grey stone dwarf with an axe on a square pedestal

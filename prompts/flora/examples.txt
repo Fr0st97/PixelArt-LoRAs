@@ -1,0 +1,22 @@
+# flora: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py flora prompts/flora/examples.txt <prompts_out.txt>
+tree | pear tree with green pears
+tree | young poplar tree with a narrow crown
+tree | grey tree covered with white fungus
+tree | frozen dead oak with icicles
+tree | dead petrified tree turned to dark stone
+plant | tall purple iris flowers with sword shaped leaves
+plant | wild grapevine with purple grapes
+plant | blue water lilies on floating round leaves
+plant | tall dune grass with seed heads
+plant | tall nettles with jagged leaves
+pot | white marble urn with a trailing green vine
+pot | glass bowl with succulents
+pot | round clay calabash pot with a small succulent
+pot | broken pot with a mutated sprout
+pot | birch bark basket with wild herbs
+mushroom | big red cap mushroom with white spots
+mushroom | white mushrooms with a glowing halo ring
+mushroom | ring of tiny white mushrooms in the grass
+mushroom | small orange mushrooms in cliff grass
+mushroom | tall shaggy ink cap mushroom

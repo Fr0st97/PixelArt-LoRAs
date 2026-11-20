@@ -1,0 +1,22 @@
+# consumables: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py consumables prompts/consumables/examples.txt <prompts_out.txt>
+food | smoked fish on a string
+food | bowl of fresh strawberries with cream
+food | roasted dark meat on a bone
+food | wooden bowl of hot stew
+potion | dusty bottle with a glowing ghostly blue liquid
+potion | gourd flask of milky white drink
+potion | small wooden flask of green herbal tonic
+potion | coconut shell cup with a glowing orange drink
+valuable | round grey stone medallion with green crystals
+valuable | twisted gold neck torc with ball ends
+valuable | silver leaf brooch with green gems
+valuable | polished brass magic oil lamp
+tool | iron pickaxe with a wooden handle
+tool | brass hunting horn curled into a ring
+tool | small hand sickle with a wooden handle
+tool | rusty bone saw with a wooden grip
+rune | purple stone with an eye symbol
+rune | white stone with a cross symbol
+rune | void rune stone with a violet spiral
+rune | dark brown rune stone with a red star crack

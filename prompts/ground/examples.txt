@@ -1,0 +1,22 @@
+# ground: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py ground prompts/ground/examples.txt <prompts_out.txt>
+ground | muddy round house floor covered with rushes
+ground | grey slate rock ground with cracks
+ground | black and white checkered crypt floor with cracks
+ground | frozen cobblestone with snow between the stones
+ground | golden wheat stubble after the harvest
+ground | mown hay field with long lines of cut straw
+ground | light grey snow covered gravel
+ground | pebble beach with round grey stones
+ground | colorful woven carpet laid on sand
+ground | burnt black grass patches after a wildfire
+ground | koi pond edge with flat stones
+ground | light brown packed earth
+ground | dark moss with purple glowing spots
+ground | dark cave floor with thin rivers of glowing lava
+ground | forest floor with pine needles and twigs
+ground | limestone causeway with worn cart ruts
+ground | light wooden deck planks with thin dark gaps
+ground | iron grated floor over a dark shaft
+ground | cracked white marble floor with leaves in the gaps
+ground | fluffy white cloud floor with soft edges

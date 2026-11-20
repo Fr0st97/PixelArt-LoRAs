@@ -1,0 +1,22 @@
+# monsters-large: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py monsters-large prompts/monsters-large/examples.txt <prompts_out.txt>
+animal | giant grey wolf, bushy mane, yellow eyes, bared fangs
+animal | horned bull, black hide, white horns, ring in the nose, steaming breath
+animal | sabertooth lion, tawny fur, dark mane, long fangs
+animal | giant tortoise, mossy domed shell, wrinkled grey skin, slow heavy legs
+animal | big grey rhinoceros, two horns, armored skin folds, small ears
+animal | giant crocodile, rough green scales, long snout, rows of teeth, short legs
+animal | moose, huge flat antlers, dark brown fur, long legs
+animal | giant panda, black and white fur, round ears, chewing bamboo
+animal | giant komodo dragon, grey scales, forked tongue, heavy tail
+dragon | golden dragon, shining yellow scales, long whiskers, curved horns
+dragon | green dragon on four legs, horned crest, folded wings, spiked back, long tail
+dragon | crystal dragon, translucent purple scales, gem horns
+insect | giant locust, green body, long jumping legs, red eyes
+insect | giant beetle, black armored shell, big horn, six thick legs
+magical | giant hydra with three heads, green scales, long necks, fangs
+magical | chimera, lion head, goat head on the back, snake tail, brown fur
+elemental | lava hound, body of molten rock, dripping lava, black crust plates
+elemental | ice wolf golem, body of blue ice, frozen breath, sharp crystal fur
+undead | ghostly stag, transparent blue body, glowing antlers, wisps trailing
+demon | demonic wolf, black fur, ram horns, fire breath, red eyes

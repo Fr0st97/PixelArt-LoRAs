@@ -1,0 +1,22 @@
+# monsters-large-biped: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py monsters-large-biped prompts/monsters-large-biped/examples.txt <prompts_out.txt>
+humanoid | hill giant in fur clothes, long brown beard, tree trunk club, rope belt, bare feet
+humanoid | fomorian, misshapen giant, one huge arm, crooked face, chain weapon
+humanoid | giant orc shaman, bone mask, totem staff with feathers, painted body, necklace of teeth
+humanoid | giant ogre, warty grey skin, underbite with tusks, spiked iron mace, leather belt with skulls
+humanoid | storm giant, blue skin, white braided hair, lightning spear, golden bracers
+humanoid | troll shaman, green mossy skin, skull staff, feather mask, beads
+humanoid | fire giant, red skin, flaming orange beard, black iron armor, huge flaming sword
+humanoid | one eyed cyclops, bald head, single big eye, spiked wooden club, fur loincloth, huge belly
+undead | huge ghoul, long thin arms, hunched back, grey skin, black claws
+undead | bone colossus, body made of many skulls and bones, huge bone club
+undead | giant armored skeleton knight, horned helmet, rusty plate armor, tattered red cape, great sword
+elemental | ice golem, translucent blue ice body, frozen rocks inside, frosty breath
+elemental | iron golem, riveted steel plates, glowing red eye slit, piston arms
+elemental | giant stone golem, blocky granite body, glowing blue runes, moss on the shoulders
+demon | pit fiend, dark red skin, big leathery wings, curled horns, flaming eyes
+demon | bull headed demon, black fur, burning whip, iron collar, hooves
+dragon | upright slender two legged red dragon, narrow head with a sharp crest, folded bronze bat wings, long thin tail with a spiked tip
+animal | giant kangaroo boxer, brown fur, red boxing gloves, strong tail
+magical | werewolf, grey fur, wolf head, torn trousers, long claws, hunched pose
+insect | giant mantis warrior, upright, scythe arms, green armored body

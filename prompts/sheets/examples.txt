@@ -1,0 +1,22 @@
+# sheets: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py sheets prompts/sheets/examples.txt <prompts_out.txt>
+furniture | small wooden table with a cake
+furniture | wooden bed with a straw mattress
+furniture | carved wooden chair with knot patterns
+furniture | dark bed with a starry canopy
+furniture | low log seat with a sheepskin
+furniture | round table made from a barrel top
+furniture | cabinet inlaid with mother of pearl
+wall_decoration | bundle of dried flowers tied with string
+wall_decoration | drinking horn on a leather strap
+wall_decoration | framed anatomy drawing of a bird
+wall_decoration | tall tapestry with a hunting scene
+wall_decoration | framed painting of snowy mountains
+wall_decoration | old pickaxe hanging on an iron hook
+wall_decoration | small mirror in a golden frame
+lamp | wooden wall lamp shaped like a leaf
+lamp | wall lamp with a wheat sheaf bracket
+lamp | bronze wall lamp shaped like a cobra
+lamp | green bottle lamp hanging on a rope
+lamp | hanging lamp made from a glass eyeball
+lamp | iron candle chandelier made from a wagon wheel

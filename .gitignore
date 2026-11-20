@@ -1,0 +1,5 @@
+# LoRA weights and archives are shared separately, not in the repository
+*.safetensors
+*.zip
+results/
+__pycache__/

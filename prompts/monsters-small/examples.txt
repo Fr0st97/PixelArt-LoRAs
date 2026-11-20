@@ -1,0 +1,22 @@
+# monsters-small: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py monsters-small prompts/monsters-small/examples.txt <prompts_out.txt>
+animal | spotted green frog, wide mouth, yellow belly, long folded back legs
+animal | white ferret, black eye mask markings, long slim body, fluffy tail
+animal | orange fox cub, black paws, white tail tip, big pointed ears
+animal | spiny desert lizard, sand colored, row of orange spikes on the back, long tail
+animal | white rabbit, long upright ears, pink nose, fluffy round tail, big hind legs
+animal | baby crocodile, green bumpy scales, wide open little jaws, short legs
+humanoid | little gnome tinkerer, huge round goggles, pointy blue hat, brass wrench, patched green overalls
+humanoid | frog man scout, green skin, red spotted back, blowpipe, reed basket on the back
+humanoid | goblin bomber, leather cap with goggles, round black bomb with a lit fuse, bandolier of smaller bombs
+humanoid | imp sized fish man, blue scales, bulging yellow eyes, fin on the head, short trident, webbed feet
+insect | brown tick, swollen round body, tiny head, eight short legs
+insect | jumping spider, fuzzy black and white stripes, big front eyes
+undead | little zombie child, grey green skin, torn shirt, one eye missing, arms stretched forward
+undead | skeleton dog, white bones, glowing blue eye sockets, rattling chain collar
+elemental | copper clockwork beetle golem, gears visible, key winder on the back
+elemental | little lightning wisp, crackling yellow sphere, zigzag sparks around it
+magical | living candle creature, melting wax body, flame on the head, tiny wax hands
+magical | green slime blob, one big eye inside, dripping edges, shiny highlight
+demon | red imp, small bat wings, curved black horns, pointed tail, tiny pitchfork, yellow eyes
+dragon | small feathered drake, blue feathers, yellow beak like snout, clawed feet

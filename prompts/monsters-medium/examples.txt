@@ -1,0 +1,22 @@
+# monsters-medium: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py monsters-medium prompts/monsters-medium/examples.txt <prompts_out.txt>
+humanoid | green orc warrior, lower jaw tusks, iron shoulder plate, crude battle axe, fur loincloth, red war paint
+humanoid | desert nomad warrior, sand colored turban, face veil, curved scimitar, round shield
+humanoid | gnoll hunter, hyena head, spotted fur, crude bow, bone necklace, ragged cloak
+humanoid | pirate captain, black tricorn hat, red coat, curved cutlass, peg leg, bushy beard
+humanoid | masked bandit, black cloth mask, red scarf, two curved daggers, leather boots, bare muscular arms
+humanoid | satyr piper, goat legs with hooves, small horns, wooden pan flute, curly beard
+animal | hyena, spotted yellow brown fur, sloped back, open grinning jaws
+animal | black panther, glossy black fur, green eyes, long tail, lean muscles
+animal | giant badger, black and white striped head, thick claws, low wide body
+undead | mummy priest, golden mask, loose bandages, scarab amulet, curved staff
+undead | plague zombie, green boils, torn peasant clothes, flies around the head
+undead | headless horseman on foot, black cape, pumpkin carried in hand, rusty sword
+elemental | vine golem, body of twisted green vines, red flowers, thorny fists
+elemental | sand golem, crumbling yellow sand body, stone mask face, dust trail
+insect | giant ant soldier, armored brown head, huge mandibles, six legs
+insect | giant brown spider, hairy legs, cluster of red eyes, striped abdomen
+magical | walking tree stump, root legs, branch arms, angry knot face, moss patches
+magical | living scarecrow, burlap sack head with stitched smile, straw hands, rusty sickle
+demon | red horned demon, black curved horns, bat wings folded, spiked tail, clawed feet
+dragon | kobold dragon priest, red scales, dragon skull helmet, staff with a flame

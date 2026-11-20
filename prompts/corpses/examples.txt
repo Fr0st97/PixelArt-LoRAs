@@ -1,0 +1,22 @@
+# corpses: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py corpses prompts/corpses/examples.txt <prompts_out.txt>
+humanoid | one-eyed tan-skinned giant with a brown loincloth
+humanoid | orc shaman with a bone staff
+humanoid | green goblin with a rusty dagger
+demon | fire demon with burning horns
+demon | horned demon with a fiery whip
+demon | small red imp with bat wings
+undead | mummy wrapped in bandages
+undead | green rotting zombie in torn clothes
+undead | skeletal warrior in rusty plate armor
+animal | white tiger with black stripes
+animal | grey wolf with yellow eyes
+animal | wild boar with big tusks
+elemental | energy elemental crackling with lightning
+elemental | earth elemental made of brown rock
+dragon | blue frost dragon
+dragon | green swamp dragon
+insect | giant black spider with red marks
+insect | giant scorpion with a black stinger
+magical | floating eye beast with tentacles
+magical | walking treant with glowing eyes

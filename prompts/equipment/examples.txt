@@ -1,0 +1,22 @@
+# equipment: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py equipment prompts/equipment/examples.txt <prompts_out.txt>
+armor | dark knight set with red trim
+armor | white linen and gold desert set with a turban helmet
+armor | shining silver plate set with a red plume
+armor | red demon plate set
+armor | green leather set covered with leaves
+knight | haunted silver set with a ghostly blue glow
+knight | curved bronze set with sun engravings
+knight | scholar knight set with blue enamel and silver
+knight | heavy black iron set with rivets
+knight | iron and leather set with wolf fur trim
+mage | court mage set with purple velvet and gold
+mage | beast magic set with claws and feathers
+mage | arcane library set with glowing blue runes
+mage | ghost magic set with candles and chains
+mage | sandstorm magic set with swirling sand
+paladin | red painted set with black fletching
+paladin | white and gold set with royal crests
+paladin | dark oak set with bone tips
+paladin | traveler set with green fletching and leather wraps
+paladin | gold and ivory set with scarab ornaments

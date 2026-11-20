@@ -1,0 +1,22 @@
+# nature: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py nature prompts/nature/examples.txt <prompts_out.txt>
+rock | flat cracked stone slab with red glowing star crack
+rock | rounded river rock in raked gravel
+rock | rock with a round hole through it
+rock | flat moss covered stepping stone
+rock | mossy stones stacked by a fence
+wood | splintered piece of a castle gate with iron studs
+wood | stack of firewood tied with grass rope
+wood | broken wooden sled lying in the snow
+wood | crooked walking stick with a crow skull
+wood | birch logs tied with a red ribbon
+crystal | large purple crystal cluster, standing upright
+crystal | blue and silver snowflake shaped crystal
+crystal | tall white frost crystal spire
+crystal | rough uncut diamond in grey rock
+crystal | pink desert crystal shaped like a rose
+bones | small deer skull with antlers among dry leaves
+bones | antelope skull with long spiral horns
+bones | fish skeletons by toxic water
+bones | small owl skull with a feather
+bones | antlers of a white stag tangled in vines

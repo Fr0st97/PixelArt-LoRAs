@@ -1,0 +1,22 @@
+# accessories: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py accessories prompts/accessories/examples.txt <prompts_out.txt>
+ring | dark iron ring with a skull
+ring | gold ring with a large blue sapphire
+ring | ring with a glowing fire stone
+ring | thick gold ring with a red ruby
+ring | gold ring with a tiny hourglass
+ring | black onyx ring with a silver skull
+ring | golden ring with a green emerald
+amulet | copper amulet with a scarab
+amulet | dark amulet with a purple eye
+amulet | necklace of wolf teeth on a leather cord
+amulet | pair of bone dice on a leather cord
+amulet | heavy golden chain with a royal crest medallion
+amulet | golden scarab amulet with a blue stone
+amulet | military medal with a red ribbon
+bag | red backpack with golden buckles
+bag | leather hunting bag with a fur flap
+bag | red velvet pouch with golden drawstrings
+bag | patched traveler backpack with a frying pan
+bag | dusty velvet purse with a silver clasp
+bag | leather satchel full of scrolls

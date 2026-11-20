@@ -1,0 +1,22 @@
+# loot: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py loot prompts/loot/examples.txt <prompts_out.txt>
+loot | torn brim of a witch hat
+loot | bundle of soft red fox fur
+loot | black feather of a crow spirit
+loot | shimmering silver moth wing with dark spots
+loot | silver unicorn hair braid tied with thread
+loot | glowing purple ectoplasm blob in a glass vial
+loot | glowing orange crystal heart of a golem
+loot | swollen yellow spore sac with thin veins
+loot | yellow pollen sack from a giant bee
+loot | curved black and white vulture feather
+loot | shiny black raven feather with a blue sheen
+loot | long black and white ostrich feather
+loot | heavy pebble of dark matter
+loot | piece of thick scaly green troll hide
+loot | brown spider egg sack
+loot | long fiery red phoenix tail feather
+loot | giant mole claw covered in dirt
+loot | long silver lock of banshee hair
+loot | patch of black jackal pelt
+loot | storm spirit spark in a glass jar

@@ -1,0 +1,22 @@
+# outfits: 20 example wishes, one per line as kind | description.
+# Build a prompt file: python tools/make_prompts.py outfits prompts/outfits/examples.txt <prompts_out.txt>
+female | adventurer in a simple tunic with a wide brimmed hat with a long feather and a backpack
+male | assassin in a black hooded outfit
+female | beekeeper with a veiled hat
+male | cleric in a white robe with a golden symbol
+female | desert nomad in sand colored wraps
+male | dragon slayer in green scale armor
+female | fisherman with a straw hat and a fishing rod
+male | gladiator with a bronze helmet
+female | hunter in leather armor with a bow
+male | ice mage in a white and blue robe
+female | jester in a colorful outfit with bells
+male | miner with a helmet lamp and a pickaxe
+female | monk in an orange robe
+male | necromancer in a dark robe with a skull staff
+female | noble in a purple coat with a feathered hat
+male | pirate captain with a long coat
+female | samurai in red lacquered armor
+male | sorcerer in a dark blue robe with a glowing orb
+female | traveler with a cloak and a walking stick
+male | viking with a horned helmet and a round shield
