@@ -38,10 +38,10 @@ Status legend: **good** (checked by eye, usable), **usable** (works with known l
 | corpses | `blnr_corpse` | a monster standing plus 3 corpse stages | 1024×1024, 2×2 | ×8 | not released yet |
 | walls | `blnr_wall` | wall sets in 4 parts, stairs, floor openings, ladders | 1024×1024, 2×2 | ×6 | good (wall parts) |
 | monsters-small | `blnr_mob` | small monster walk cycle: idle + 2 walk frames, front and back | 1152×768, 3×2 cells of 48 | ×8 | not evaluated |
-| monsters-medium | `blnr_mob` | medium monster walk cycle | 1536×1024, 3×2 cells of 64 | ×8 | not evaluated |
-| monsters-large-biped | `blnr_mob` | large two-legged monster walk cycle | 1920×1280, 3×2 cells of 80 | ×8 | not evaluated |
-| monsters-large | `blnr_mob` | large monster walk cycle, other shapes | 1920×1280, 3×2 cells of 80 | ×8 | not evaluated |
-| outfits | `blnr_outfit` | player character walk cycle: idle + 2 walk frames, front and back | 1536×1024, 3×2 cells of 64, magenta background | ×8 | not evaluated |
+| monsters-medium | `blnr_mob` | medium monster walk cycle | 1536×1024, 3×2 cells of 64 | ×8 | good |
+| monsters-large-biped | `blnr_mob` | large two-legged monster walk cycle | 1920×1280, 3×2 cells of 80 | ×8 | very good |
+| monsters-large | `blnr_mob` | large monster walk cycle, other shapes | 1920×1280, 3×2 cells of 80 | ×8 | very good |
+| outfits | `blnr_outfit` | player character walk cycle: idle + 2 walk frames, front and back | 1536×1024, 3×2 cells of 64, magenta background | ×8 | excellent |
 
 "Pixel scale ×8" means one game pixel is an 8×8 block in the image: a 64×64 game sprite fills 512×512.
 Post-processing ([postprocessing.md](postprocessing.md)) finds this grid and shrinks the image back.
