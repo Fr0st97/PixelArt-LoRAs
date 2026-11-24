@@ -6,7 +6,8 @@ post-processed to game size with `tools/postprocess.py`. Only the sprites that w
 
 How to read it: `<lora>-prompts.txt` has one prompt per line; `--d` is the seed. `examples/<lora>.png` shows every kept
 sprite at 2x game size with its seed written under it (a letter after the seed is the part of a multi-part sheet,
-e.g. a, b, c, d for the four wall parts; ground shows the four ground variants g1–g4 of each sheet).
+e.g. a, b, c, d for the four wall parts). Ground shows each sheet assembled into an island: the four ground variants
+plus matching border edges, outer corners and inner corners, with a single-tile sample next to it.
 
 To generate them again: `sh pod/generate.sh loras/Krea2-PixelArt-<lora>.safetensors prompts/biomes/jarmark/<lora>-prompts.txt results/jarmark-<lora>`
 

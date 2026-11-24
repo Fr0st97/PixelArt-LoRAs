@@ -1,5 +1,7 @@
 # PixelArt LoRAs
 
+> New to RunPod? Sign up with this referral link: [runpod.io?ref=zo6o7sp5](https://runpod.io?ref=zo6o7sp5)
+
 LoRAs for the **Krea-2** image model that draw game graphics as pixel art in a top-down oblique 45° view:
 plants, rocks, furniture, equipment, inventory items, ground tiles, walls, corpses, and walking characters
 and monsters. Each LoRA covers one kind of graphics and draws it at a fixed pixel scale on a plain gray
