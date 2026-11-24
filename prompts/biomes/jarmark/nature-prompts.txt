@@ -1,0 +1,13 @@
+blnr_nature, pixel art game object, top-down oblique 45 degree view, rock, snowy boulder tied with a red ribbon, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70042
+blnr_nature, pixel art game object, top-down oblique 45 degree view, rock, stack of stones with small candles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70043
+blnr_nature, pixel art game object, top-down oblique 45 degree view, rock, smooth grey stone with a carved star, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70044
+blnr_nature, pixel art game object, top-down oblique 45 degree view, rock, rock with icicles and a pine garland, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70045
+blnr_nature, pixel art game object, top-down oblique 45 degree view, rock, round snowy rock with tiny lights, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70046
+blnr_nature, pixel art game object, top-down oblique 45 degree view, crystal, red and green crystal cluster, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70047
+blnr_nature, pixel art game object, top-down oblique 45 degree view, crystal, golden crystal shaped like a five pointed star, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70048
+blnr_nature, pixel art game object, top-down oblique 45 degree view, crystal, blue and silver snowflake shaped crystal, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70049
+blnr_nature, pixel art game object, top-down oblique 45 degree view, dead wood lying on the ground, yule log with holly and candles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70050
+blnr_nature, pixel art game object, top-down oblique 45 degree view, dead wood lying on the ground, birch logs tied with a red ribbon, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70051
+blnr_nature, pixel art game object, top-down oblique 45 degree view, dead wood lying on the ground, old tree stump topped with snow and a pinecone, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70052
+blnr_nature, pixel art game object, top-down oblique 45 degree view, dead wood lying on the ground, cut pine trunk with green branches, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70053
+blnr_nature, pixel art game object, top-down oblique 45 degree view, dead wood lying on the ground, fallen pine branch with red berries, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70054

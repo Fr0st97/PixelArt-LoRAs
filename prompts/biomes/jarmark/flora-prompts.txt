@@ -1,0 +1,21 @@
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, pine tree decorated with red and gold balls, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70021
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, pine tree decorated with red and gold balls, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70022
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, tall fir tree with a gold star on top, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70023
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, tall fir tree with a gold star on top, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70024
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, small fir tree with lit candles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70025
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, small fir tree with lit candles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70026
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, snowy pine with colorful light bulbs, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70027
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, snowy pine with colorful light bulbs, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70028
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, white frosted tree with silver baubles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70029
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, white frosted tree with silver baubles, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70030
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, pine tree with red ribbons and candy canes, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70031
+blnr_flora, pixel art game object, top-down oblique 45 degree view, tree leaning toward the upper left, pine tree with red ribbons and candy canes, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70032
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant, mistletoe bunch with white berries, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70033
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant, small pine sapling with a red bow, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70034
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant, evergreen bush with tiny lights, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70035
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant, bundle of pine branches with pinecones, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70036
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant, holly sprig with red berries, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70037
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant in a pot, red pot with a red poinsettia, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70038
+blnr_flora, pixel art game object, top-down oblique 45 degree view, plant in a pot, wooden tub with a small decorated pine, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70039
+blnr_flora, pixel art game object, top-down oblique 45 degree view, mushroom, red and white striped candy mushroom, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70040
+blnr_flora, pixel art game object, top-down oblique 45 degree view, mushroom, golden glowing mushroom with snow on its cap, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70041

@@ -1,0 +1,4 @@
+blnr_utility, pixel art game inventory item, food, star shaped gingerbread cookie with white icing, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70091
+blnr_utility, pixel art game inventory item, food, steaming mug of red mulled wine, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70092
+blnr_utility, pixel art game inventory item, food, red and white candy cane, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70093
+blnr_utility, pixel art game inventory item, food, roasted chestnuts in a paper cone, plain gray background --w 1024 --h 1024 --s 8 --l 1 --d 70094
