@@ -40,4 +40,4 @@ keeps to its own job, and they share notes through a `WORK.md` file in the work 
 ## What you will get
 
 PNG images of game sprites drawn by the LoRAs, and after post-processing, transparent sprites at game size
-(64×64, 48×48 or 32×32; large monsters 96×96). Examples of what each LoRA draws: [docs/loras.md](docs/loras.md).
+(64×64 or 32×32, characters fitted to the game's outfit size; large monsters 96×96; 48×48 on request). Examples of what each LoRA draws: [docs/loras.md](docs/loras.md).

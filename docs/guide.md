@@ -194,7 +194,7 @@ In Jupyter, right-click a folder → **Download as an archive**, or zip it in th
 
 The generated image is a big picture of a small sprite: every game pixel is a block of 6, 8 or 16 image pixels,
 on a gray background. Post-processing finds that grid, reads one color per block, removes the background and
-cuts sheets into single 64×64 sprites (and 48 or 32 if needed). Walk cycles get east and west by transposition.
+cuts sheets into single 64×64 sprites at the LoRA's own scale, fits characters to the game's outfit size (35 px tall), and makes 48 or 32 versions only if asked (`--sizes`). Walk cycles get east and west by transposition.
 Details and commands: [postprocessing.md](postprocessing.md).
 
 ## 9. Stop the pod

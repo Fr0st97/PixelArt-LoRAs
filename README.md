@@ -5,7 +5,7 @@
 LoRAs for the **Krea-2** image model that draw game graphics as pixel art in a top-down oblique 45° view:
 plants, rocks, furniture, equipment, inventory items, ground tiles, walls, corpses, and walking characters
 and monsters. Each LoRA covers one kind of graphics and draws it at a fixed pixel scale on a plain gray
-background, so the result can be shrunk back to exact game size (64×64, 48×48 or 32×32 sprites).
+background, so the result can be shrunk back to exact game size (64×64 or 32×32 sprites; smaller fixed sizes on request).
 
 ## LoRAs
 
@@ -44,7 +44,8 @@ Full model names are **Krea 2 PixelArt <LoRA>**, e.g. Krea 2 PixelArt flora; the
 3. `sh pod/setup_pod.sh` installs the generator (musubi-tuner) and downloads Krea-2 Turbo.
 4. `sh pod/generate.sh <lora.safetensors> <prompts.txt> <output_dir>` generates one image per prompt line.
 5. Download the images and turn them into sprites: `python tools/postprocess.py <lora> <images> <output>`
-   ([docs/postprocessing.md](docs/postprocessing.md)).
+   ([docs/postprocessing.md](docs/postprocessing.md)); in ComfyUI use the node
+   [PixelArt Postprocess](docs/postprocessing.md#in-comfyui).
 6. Stop the pod.
 
 **New to this? Open [START_HERE.md](START_HERE.md)**: give this repository to an AI assistant and it will guide
@@ -62,6 +63,7 @@ you through everything (or do most of it for you).
 | `docs/loras.md` | catalog of the LoRAs: triggers, layouts, prompt templates, examples, status |
 | `docs/postprocessing.md` | how generated images become game sprites; east/west for walk cycles |
 | `tools/postprocess.py` | shrinks generated images to game size, removes the background, cuts sheets, adds east/west |
+| `comfyui/nodes.py`, `__init__.py` | the same post-processing as a ComfyUI node (clone the repo into `ComfyUI/custom_nodes/`) |
 | `pod/setup_pod.sh` | installs musubi-tuner v0.3.6 and downloads the Krea-2 models on a pod |
 | `pod/generate.sh` | generates images with one LoRA from a prompt file |
 | `prompts/<lora>/examples.txt` | 20 example wishes (`kind \| description`) per LoRA; `tools/make_prompts.py` turns them into a prompt file |

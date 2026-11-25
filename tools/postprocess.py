@@ -2,14 +2,16 @@ r"""Turn images generated with a PixelArt LoRA into game sprites: find the pixel
 the background, cut sheets into single sprites and, for walk cycles, add east and west by transposition.
 
 Usage:
-    python postprocess.py <lora> <input_folder> <output_folder> [--sizes 64,48,32,32fit]
+    python postprocess.py <lora> <input_folder> <output_folder> [--sizes 64,fit,48,32,32fit]
     python postprocess.py --list            # show the LoRAs, how each is cut and its default sizes
 
     <lora>          flora, sheets, nature, pairs, equipment, accessories, consumables, loot, ground, corpses,
                     walls, monsters-small, monsters-medium, monsters-large-biped, monsters-large, outfits
     <input_folder>  PNG files from one generation run (e.g. results/<run> downloaded from the pod)
-    --sizes         instead of the LoRA's default sizes:
-                      64     64x64/                       the sprite at full game size
+    --sizes         instead of the LoRA's default sizes (default: the LoRA's own pixel scale, i.e. 64 for most,
+                    fit for outfits, 32 for items and ground; 48 and 32 are extra fixed sizes on request):
+                      64     64x64/                       the sprite at full game size (the LoRA's pixel scale)
+                      fit    fitted/                      walk cycles: shrunk to the client outfit height (35 px)
                       48     48on64-sharp05/, -sharp10/   a 48×48 version at the bottom right of a 64×64 canvas
                       32     32x32-sharp05/, -sharp10/    a 32×32 version of the 64×64 sprite
                       32fit  32x32-fit/                   item at real size up to 32 px, larger items shrunk to fit
@@ -433,11 +435,34 @@ def fit32(o, strength=1.0):
 
 
 SIZE_FOLDERS = {"64": ["64x64"], "48": [f"48on64-{s}" for s in STRENGTHS],
-                "32": [f"32x32-{s}" for s in STRENGTHS], "32fit": ["32x32-fit"]}
+                "32": [f"32x32-{s}" for s in STRENGTHS], "32fit": ["32x32-fit"], "fit": ["fitted"]}
+
+FIT_HEIGHT = 35   # height of the idle south frame of a game client outfit without addons (median of 148, p10-p90 32-40)
+
+
+def fit_walk(cells, height=FIT_HEIGHT):
+    """Outfits come out 15-35% taller than the game client's and each by a different amount, so a fixed 3/4 does not
+    fit. One scale n/64 per character, from the height of the idle south frame, applied to every frame (the movement
+    stays), shrunk with toN; then the union of the frames goes back to the bottom right. A figure already at most
+    `height` tall is kept as it is. Returns (frames, n)."""
+    s0 = cells.get("south-0")
+    if s0 is None or s0.shape[0] != 64:
+        return cells, 64
+    y0, y1, _, _ = bbox(s0)
+    if y1 - y0 <= height:
+        return cells, 64
+    n = int(round(64 * height / (y1 - y0)))
+    small = {c: toN(o, n, 0.5) for c, o in cells.items()}
+    boxes = [b for b in (Image.fromarray(o).getbbox() for o in small.values()) if b]
+    x1, y1 = max(b[2] for b in boxes), max(b[3] for b in boxes)
+    out = {}
+    for c, o in small.items():
+        f = np.zeros((64, 64, 4), np.uint8); f[64 - y1:, 64 - x1:] = o[:y1, :x1]; out[c] = f
+    return out, n
 
 
 def resize(o64, folder):
-    if folder in ("64x64", "96x96"):
+    if folder in ("64x64", "96x96", "fitted"):           # fitted: frames already scaled by fit_walk
         return o64
     if folder == "32x32-fit":
         return fit32(o64)
@@ -449,11 +474,11 @@ def resize(o64, folder):
 
 # lora: (cut function, default sizes, short description)
 LORAS = {
-    "flora":       (cut_objects,   ("64", "48", "32"), "one object -> one sprite"),
-    "nature":      (cut_objects,   ("64", "48", "32"), "one object -> one sprite"),
-    "sheets":      (cut_objects,   ("64", "48", "32"), "2×2 cells of 64 -> a b c d"),
-    "pairs":       (cut_pair,      ("64", "48", "32"), "middle strip -> a (left), b (right)"),
-    "corpses":     (cut_corpses,   ("64", "48", "32"), "fixed 2×2 grid of 64 -> a b c d"),
+    "flora":       (cut_objects,   ("64",), "one object -> one sprite"),
+    "nature":      (cut_objects,   ("64",), "one object -> one sprite"),
+    "sheets":      (cut_objects,   ("64",), "2×2 cells of 64 -> a b c d"),
+    "pairs":       (cut_pair,      ("64",), "middle strip -> a (left), b (right)"),
+    "corpses":     (cut_corpses,   ("64",), "fixed 2×2 grid of 64 -> a b c d"),
     "equipment":   (cut_equipment, ("32fit",),         "2×2 items of 32, cut on the lines -> a b c d"),
     "accessories": (cut_objects,   ("32fit",),         "one item, real size up to 32"),
     "consumables": (cut_objects,   ("32fit",),         "one item, real size up to 32"),
@@ -461,11 +486,12 @@ LORAS = {
     "ground":      (cut_ground,    ("32",),            "4×4 tiles of 32, one folder per set"),
     "walls":       (cut_walls,     ("64",),            "4 parts at the bottom right of 64 (stairs: --sizes 32, "
                                                        "openings and ladders: --sizes 32fit)"),
-    "monsters-small":       (walk(48), ("64", "48"), "3×2 walk sheet, cells of 48 -> 64×64 frames, + east, west"),
-    "monsters-medium":      (walk(64), ("64", "48"), "3×2 walk sheet, cells of 64 -> 64×64 frames, + east, west"),
-    "monsters-large-biped": (walk(80), ("64", "48"), "3×2 walk sheet, cells of 80 -> 64×64 frames, + east, west"),
-    "monsters-large":       (walk(80), ("64", "48"), "3×2 walk sheet, cells of 80 -> 64×64 frames, + east, west"),
-    "outfits":              (walk(64), ("64", "48"), "3×2 walk sheet, cells of 64 -> 64×64 frames, + east, west"),
+    "monsters-small":       (walk(48), ("64",), "3×2 walk sheet, cells of 48 -> 64×64 frames, + east, west"),
+    "monsters-medium":      (walk(64), ("64",), "3×2 walk sheet, cells of 64 -> 64×64 frames, + east, west"),
+    "monsters-large-biped": (walk(80), ("64",), "3×2 walk sheet, cells of 80 -> 64×64 frames, + east, west"),
+    "monsters-large":       (walk(80), ("64",), "3×2 walk sheet, cells of 80 -> 64×64 frames, + east, west"),
+    "outfits":              (walk(64), ("fit",), "3×2 walk sheet, cells of 64 -> 64×64 frames fitted to the client "
+                                                 "outfit height (35 px), + east, west"),
 }
 WALK_LORAS = {n for n in LORAS if n.startswith("monsters") or n == "outfits"}
 TRANSPOSE = {"east": "south", "west": "north"}   # east = transpose(south), west = transpose(north), frame by frame
@@ -481,10 +507,17 @@ def save_walk(out, name, cells, sizes):
         sizes, folders = ("96",), {"96": ["96x96"]}
     else:
         folders = SIZE_FOLDERS
+    fitted = None
     for size in sizes:
+        if size == "fit":
+            if fitted is None:
+                fitted, _ = fit_walk(cells)
+            base = fitted
+        else:
+            base = cells
         for folder in folders[size]:
             d = out / name / folder; d.mkdir(parents=True, exist_ok=True)
-            frames = {c: resize(o64, folder) for c, o64 in cells.items()}
+            frames = {c: resize(o64, folder) for c, o64 in base.items()}
             for new, src in TRANSPOSE.items():
                 for c in [c for c in frames if c.startswith(src + "-")]:
                     frames[new + c[len(src):]] = frames[c].transpose(1, 0, 2).copy()
@@ -527,7 +560,7 @@ def main():
     ap.add_argument("lora", nargs="?", choices=sorted(LORAS))
     ap.add_argument("input", nargs="?", type=Path)
     ap.add_argument("output", nargs="?", type=Path)
-    ap.add_argument("--sizes", help="comma list of 64, 48, 32, 32fit")
+    ap.add_argument("--sizes", help="comma list of 64, fit, 48, 32, 32fit")
     ap.add_argument("--list", action="store_true", help="show the LoRAs and how each is processed")
     args = ap.parse_args()
     if args.list:
